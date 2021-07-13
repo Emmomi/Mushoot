@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bar4 : MonoBehaviour
+public class bar3 : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject mine;
@@ -17,7 +17,7 @@ public class bar4 : MonoBehaviour
         transform.Translate(new Vector3(-0.1f, 0, 0));
         Vector3 pos = transform.position;
         if (pos.x>-1&&pos.x < 1) {
-            if (Input.GetKey(KeyCode.K)) {
+            if (Input.GetKey(KeyCode.L)) {
                 Destroy(mine);
                 if (pos.x < 1 && pos.x > 0.7f|| pos.x < -0.7f && pos.x > -1)
                 {
